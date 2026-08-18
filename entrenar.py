@@ -7,9 +7,9 @@ from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
 
 
-# 1. Cargar datos con aumento de imágenes — ✅ CORREGIDO para MobileNetV2
+# 1. Cargar datos con aumento de imágenes —  CORREGIDO para MobileNetV2
 datagen = tf.keras.preprocessing.image.ImageDataGenerator(
-    preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input,  # ✅ Reemplaza rescale
+    preprocessing_function=tf.keras.applications.mobilenet_v2.preprocess_input,  #  Reemplaza rescale
     validation_split=0.2,
     rotation_range=20,
     width_shift_range=0.1,
